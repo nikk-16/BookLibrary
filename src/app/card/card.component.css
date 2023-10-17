@@ -1,0 +1,15 @@
+.box {
+    /* width:50px; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    /* position: relative; */
+    height: 5em;
+    /* text-overflow: -o-ellipsis-lastline; */
+    /* white-space:nowrap; */
+    overflow: hidden;
+    text-overflow:ellipsis;
+    /* font-weight: 400; */
+    font-size: medium;
+    line-height: 1.6;
+  }

@@ -1,0 +1,32 @@
+/* .card-container{
+    width: 80%;
+} */
+
+.card-container{
+    width: 1300px;
+}
+.card{
+    width: 320px;
+}
+
+.cart{
+    width: 400px;
+    position: sticky !important;
+    /* height: 800px; */
+}
+.search{
+    /* width: 200px;
+    height: 120px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+    /* background-color: #563d7c; */
+}
+.navbar{
+    background-color: #563d7c;
+    padding: 20px;
+    margin-bottom: 2rem;
+    border-start-end-radius: 1rem;
+    border-start-start-radius: 1rem;
+}

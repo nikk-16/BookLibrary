@@ -1,0 +1,20 @@
+<div class="book d-flex flex-row border shadow rounded-4 m-2 justify-content-between">
+    <div class="d-flex flex-row">
+        <img src="{{cartItem?.book?.image}}" alt="" height="80px" class="rounded-3 me-2">
+        
+        <div class="d-flex flex-row justify-content-start">
+            <div class="name d-flex flex-column">
+                <h6 class="">{{cartItem?.book?.title}}</h6>
+                <h6 class="mb-0">{{cartItem?.book?.price?.displayValue}} £</h6>
+                <p class="mb-0">Quantity: {{cartItem?.quantity}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <button class="btn btn-sm btn-primary mr-1 badge" (click)="decreaseQuantity(cartItem!)">-</button>
+        <span class="fw-normal mt-1 m-2">{{cartItem?.quantity}}</span>
+        <button class="btn btn-sm btn-primary ml-1 badge" (click)="increaseQuantity(cartItem!)">+</button>
+        <span class="badge bg-danger fw-normal rounded-pill ms-2 me-2"><a (click)="removeFromCart(cartItem!)"
+                class="remove text-white">x</a></span>
+    </div>
+</div>

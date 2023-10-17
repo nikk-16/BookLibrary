@@ -1,0 +1,10 @@
+<div class="book d-flex flex-column align-items-center">
+    <img src="{{Book?.image}}" alt="" srcset="" width="319px" height="400px" class="rounded-top-4">
+    <div class="title p-1 px-3">
+        <h4>{{Book?.title}}</h4>
+        <p class="box d-flex flex-wrap justify-content-around">{{Book?.summary}}</p>
+        <p class="pb-1 m-0"><b class="p-0">Author : </b>{{Book?.author}}</p>
+        <h4 class="pb-1 m-0">£{{Book?.price?.displayValue}}</h4>
+        <button type="button" class="btn btn-primary btn-sm mb-2 rounded-2" (click)="addToCart(Book!)">Add to cart</button>
+    </div>
+</div>
